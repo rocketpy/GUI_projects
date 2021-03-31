@@ -15,3 +15,8 @@ frm = wx.Frame(None, title="Hello World")
 frm.Show()
 app.MainLoop()
 
+
+#  one line projects
+# import wx; a=wx.App(); wx.Frame(None, title="Hello World").Show(); a.MainLoop()
+
+
