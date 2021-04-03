@@ -7,7 +7,11 @@ class MyFrame(wx.MDIParentFrame):
         
         menu_bar = wx.MenuBar()
         f_menu = wx.Menu()
-        item = f_menu.Append(wx.ID_EXIT, "Exit", "Exit from App")
+        item = wx.MenuItem(f_menu, "Exit", "Exit from App")
+        item.SetBitmap(wx.Bitmap(file_name.png))  # add image
+        f_menu.Append(item)
+        # or
+        # item = f_menu.Append(wx.ID_EXIT, "Exit", "Exit from App")
         menu_bar.Append(f_menu, "File")
         self.SetMenuBar(menu_bar)
         self.Bind(wx.EVT_MENU, self.exit_from_menu, item)
