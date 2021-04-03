@@ -3,6 +3,8 @@
 #  PyPi: https://pypi.org/project/wxPython/
 #  Docs: https://wxpython.org/
 
+#  Gallery: https://docs.wxpython.org/gallery.html
+
 #  pip install wxPython
 
 
