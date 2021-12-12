@@ -26,4 +26,13 @@ def zoom_sign_in(id, password):
         pyautogui.click()
         time.sleep(3)
 
+    join_btn = pyautogui.locateCenterOnScreen('join_btn.png')
+    pyautogui.moveTo(join_btn)
+    pyautogui.click()
+    time.sleep(5)
+    password_button = pyautogui.locateCenterOnScreen('meeting_pswd.png')
+    pyautogui.moveTo(password_button)
+    pyautogui.click()
+    pyautogui.write(password)
+    pyautogui.press('enter')
 
