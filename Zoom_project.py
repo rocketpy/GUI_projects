@@ -35,4 +35,17 @@ def zoom_sign_in(id, password):
     pyautogui.click()
     pyautogui.write(password)
     pyautogui.press('enter')
+    time.sleep(20)
+    frame = 2
+    while frame==2:
+        join_window = pyautogui.locateCenterOnScreen('join_mic.png')
+        if window_mic == join_window:
+            frame = 3
+
+    pyautogui.moveTo(join_with_micro)
+    pyautogui.click()
+    time.sleep(5)
+    pyautogui.hotkey('alt','f')
+    time.sleep(5)
+    pyautogui.hotkey('alt','a')
 
