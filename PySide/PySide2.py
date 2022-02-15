@@ -69,5 +69,19 @@ if __name__ == "__main__":
     widget.show()
 
     sys.exit(app.exec_())
+    
+    
+# Example 2
+import sys
+from main import Ui_Dialog
+from PySide2 import QtCore, QtGui, QtWidgets
+
+
+app = QtWidgets.QApplication(sys.argv)
+Dialog = QtWidgets.QDialog()
+ui = Ui_Dialog()
+ui.setupUi(Dialog)
+Dialog.show()
+sys.exit(app.exec_())
 
 
