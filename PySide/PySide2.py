@@ -93,3 +93,31 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 
 
+#  Example 3
+import sys
+from main import Ui_Dialog
+from PySide2 import QtCore, QtGui, QtWidgets
+
+
+class Dialog(QtWidgets.QDialog, Ui_Dialog):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+
+        # here code ...
+    self.textEdit.setPlainText("Some text")
+
+    self.pushButton.clicked.connect(self.onClicked)
+    self.pushButton_2.clicked.connect(self.onClicked)
+    self.pushButton_3.clicked.connect(self.onClicked)
+        
+        
+    def onClicked(self):
+        sender = self.sender()
+        self.textEdit.setPlainText(sender.text())
+
+if __name__ == "__main__":
+    app = QtWidgets.QApplication(sys.argv)
+    w = Dialog()
+    w.show()
+    sys.exit(app.exec_())
