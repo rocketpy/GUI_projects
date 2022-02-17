@@ -121,3 +121,9 @@ if __name__ == "__main__":
     w = Dialog()
     w.show()
     sys.exit(app.exec_())
+    
+    
+# How to delete widget 
+self.next_btn.hide()
+self.next_btn.deleteLater()
+
