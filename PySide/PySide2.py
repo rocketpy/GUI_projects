@@ -19,6 +19,19 @@ $ source env/bin/activate   # for Linux and macOS
 $ env\Scripts\activate.bat  # for Windows
 """
 
+# Base frame
+import sys
+from PySide6.QtCore import Qt
+from PySide6.QtWidgets import QApplication, QLabel
+                                                     
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    label = QLabel("Hello World", alignment=Qt.AlignCenter)
+    label.show()
+    sys.exit(app.exec_())
+
+
 # Test Installation:
 # To print version information:
 
