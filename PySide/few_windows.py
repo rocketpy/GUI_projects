@@ -75,3 +75,12 @@ class Ui_t108(object):
         self.verticalLayout.addWidget(self.control_bt)
         
         
+class Ui_t1016(object):
+    def setupUi(self, t1016):
+        self.verticalLayout = QtWidgets.QVBoxLayout(t1016)
+        self.image_label = QtWidgets.QLabel("Ui_t1016", t1016)
+        self.verticalLayout.addWidget(self.image_label)
+        self.control_bt = QtWidgets.QPushButton("Next", t1016)
+        self.verticalLayout.addWidget(self.control_bt)
+        
+        
