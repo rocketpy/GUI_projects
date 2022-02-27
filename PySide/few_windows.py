@@ -131,4 +131,8 @@ class Main(QtWidgets.QWidget):
         self.pushButton_13 = QtWidgets.QPushButton("pushButton_13", self)
         self.pushButton_13.clicked.connect(self.bPall)
         
-        
+    def bPnextTask(self, _task):
+        while 1:
+            task = random.randint(0, 11)
+            if task != _task: break
+                
