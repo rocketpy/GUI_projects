@@ -111,3 +111,21 @@ class Ui_t1610(object):
         self.verticalLayout.addWidget(self.control_bt)
         
         
+class Main(QtWidgets.QWidget):
+    def __init__(self):
+        super().__init__()
+
+        self.tasks = [
+            't28', 't210', 't216', 
+            't82', 't810', 't816', 
+            't102', 't108', 't1016', 
+            't162', 't128', 't1610'
+        ]        
+        self.uis = [
+            Ui_t28(), Ui_t210(), Ui_t216(), 
+            Ui_t82(), Ui_t810(), Ui_t816(), 
+            Ui_t102(), Ui_t108(), Ui_t1016(), 
+            Ui_t162(), Ui_t168(), Ui_t1610()
+        ]
+        
+        
