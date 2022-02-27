@@ -128,4 +128,7 @@ class Main(QtWidgets.QWidget):
             Ui_t162(), Ui_t168(), Ui_t1610()
         ]
         
+        self.pushButton_13 = QtWidgets.QPushButton("pushButton_13", self)
+        self.pushButton_13.clicked.connect(self.bPall)
+        
         
