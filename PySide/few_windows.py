@@ -136,3 +136,14 @@ class Main(QtWidgets.QWidget):
             task = random.randint(0, 11)
             if task != _task: break
                 
+        self.tasks[task] = QtWidgets.QWidget()
+        widget = self.tasks[task]               
+        widget.setWindowTitle(str(task)*10)
+        widget.resize(300, 200)
+        ui = self.uis[task]                    
+        ui.setupUi(widget)
+        widget.move(0+(50*task), 0+(35*task))
+        widget.show()
+        ui.control_bt.clicked.connect(lambda ch, _task=task: self.bPnextTask(_task))
+
+                
