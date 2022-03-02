@@ -159,8 +159,10 @@ class Main(QtWidgets.QWidget):
         widget.show()
         ui.control_bt.clicked.connect(lambda ch, _task=task: self.bPnextTask(_task))
         
-        
 
-
+    def closeEvent(self, event):
+        for w in self.tasks:
+            if isinstance(w, QtWidgets.QWidget):
+                w.close()
 
                 
