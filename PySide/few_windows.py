@@ -166,3 +166,9 @@ class Main(QtWidgets.QWidget):
                 w.close()
 
                 
+if __name__ == '__main__':
+    app = QtWidgets.QApplication(sys.argv)
+    ex = Main()
+    ex.setGeometry(900, 200, 150, 100)
+    ex.show()
+    sys.exit(app.exec_())
