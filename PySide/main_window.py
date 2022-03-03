@@ -100,3 +100,19 @@
     def unifiedTitleAndToolBarOnMac ()
 
 """
+
+
+# Virtual functions:
+
+    # def createPopupMenu ()
+
+# Slots:
+
+    # def setAnimated (enabled)
+
+    # def setDockNestingEnabled (enabled)
+
+    # def setUnifiedTitleAndToolBarOnMac (set)
+    
+
+
