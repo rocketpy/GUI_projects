@@ -127,3 +127,20 @@
     def tabSizeHint (index)
 """
 
+# Slots
+
+#    def setCurrentIndex (index)
+
+# Signals
+"""
+    def currentChanged (index)
+
+    def tabBarClicked (index)
+
+    def tabBarDoubleClicked (index)
+
+    def tabCloseRequested (index)
+
+    def tabMoved (from, to)
+"""
+
