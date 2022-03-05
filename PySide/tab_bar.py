@@ -113,3 +113,17 @@
     def usesScrollButtons ()
 
 """
+
+# Virtual functions
+"""
+    def minimumTabSizeHint (index)
+
+    def tabInserted (index)
+
+    def tabLayoutChange ()
+
+    def tabRemoved (index)
+
+    def tabSizeHint (index)
+"""
+
