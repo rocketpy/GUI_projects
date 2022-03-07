@@ -93,3 +93,19 @@
 
 """
 
+# Signals
+"""
+    def aboutToHide ()
+
+    def aboutToShow ()
+
+    def hovered (action)
+
+    def triggered (action)
+"""
+# Static functions
+
+# def exec_ (actions, pos[, at=None[, parent=None]])
+
+
+
