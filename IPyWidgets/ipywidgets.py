@@ -20,7 +20,12 @@ display(w)
 
 w.value
 
+w.value = 100
 
 
+# Keys
 
+# In addition to value, most widgets share keys, description, and disabled.
+# To see the entire list of synchronized, stateful properties of any specific widget, you can query the keys property.
 
+w.keys
