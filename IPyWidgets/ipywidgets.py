@@ -1,4 +1,4 @@
-# ipywidgets: Interactive HTML Widgets
+# ipywidgets: Jupyter interactive widgets
 
 # Install
 
@@ -14,5 +14,13 @@ widgets.IntSlider()
 from IPython.display import display
 w = widgets.IntSlider()
 display(w)
+
+w = widgets.IntSlider()
+display(w)
+
+w.value
+
+
+
 
 
