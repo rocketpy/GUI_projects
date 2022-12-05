@@ -51,3 +51,26 @@ Unlinking the widgets is simple. All you have to do is call .unlink on the link 
 Try changing one of the widgets above after unlinking to see that they can be independently changed.
 """
 # mylink.unlink()
+
+
+# Widget List
+
+# Imports for JupyterLite
+%pip install -q ipywidgets
+# Note: you may need to restart the kernel to use updated packages.
+
+import ipywidgets as widgets
+
+# IntSlider
+widgets.IntSlider(
+    value=7,
+    min=0,
+    max=10,
+    step=1,
+    description='Test:',
+    disabled=False,
+    continuous_update=False,
+    orientation='horizontal',
+    readout=True,
+    readout_format='d'
+)
