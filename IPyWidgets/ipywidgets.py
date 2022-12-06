@@ -74,3 +74,34 @@ widgets.IntSlider(
     readout=True,
     readout_format='d'
 )
+
+# FloatSlider
+widgets.FloatSlider(
+    value=7.5,
+    min=0,
+    max=10.0,
+    step=0.1,
+    description='Test:',
+    disabled=False,
+    continuous_update=False,
+    orientation='horizontal',
+    readout=True,
+    readout_format='.1f',
+)
+
+#  displayed vertically.
+
+widgets.FloatSlider(
+    value=7.5,
+    min=0,
+    max=10.0,
+    step=0.1,
+    description='Test:',
+    disabled=False,
+    continuous_update=False,
+    orientation='vertical',
+    readout=True,
+    readout_format='.1f',
+)
+
+
