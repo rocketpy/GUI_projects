@@ -105,3 +105,24 @@ widgets.FloatSlider(
 )
 
 
+# Widget Events
+
+# Special events
+# Imports for JupyterLite
+%pip install -q ipywidgets
+
+import ipywidgets as widgets
+print(widgets.Button.on_click.__doc__)
+
+# Example
+from IPython.display import display
+button = widgets.Button(description="Click Me!")
+output = widgets.Output()
+
+display(button, output)
+
+def on_button_clicked(b):
+    with output:
+        print("Button clicked.")
+
+button.on_click(on_button_clicked)
