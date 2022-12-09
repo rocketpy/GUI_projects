@@ -105,6 +105,32 @@ widgets.FloatSlider(
 )
 
 
+# FloatLogSlider
+widgets.FloatLogSlider(
+    value=10,
+    base=10,
+    min=-10, # max exponent of base
+    max=10, # min exponent of base
+    step=0.2, # exponent step
+    description='Log Slider'
+)
+
+
+# IntRangeSlider
+widgets.IntRangeSlider(
+    value=[5, 7],
+    min=0,
+    max=10,
+    step=1,
+    description='Test:',
+    disabled=False,
+    continuous_update=False,
+    orientation='horizontal',
+    readout=True,
+    readout_format='d',
+)
+
+
 # Widget Events
 
 # Special events
