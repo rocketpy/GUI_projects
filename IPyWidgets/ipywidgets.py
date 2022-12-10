@@ -145,6 +145,17 @@ widgets.FloatRangeSlider(
     readout_format='.1f',
 )
 
+# IntProgress
+
+widgets.IntProgress(
+    value=7,
+    min=0,
+    max=10,
+    description='Loading:',
+    bar_style='', # 'success', 'info', 'warning', 'danger' or ''
+    style={'bar_color': 'maroon'},
+    orientation='horizontal'
+)
 
 
 
@@ -152,7 +163,7 @@ widgets.FloatRangeSlider(
 
 # Special events
 # Imports for JupyterLite
-%pip install -q ipywidgets
+# %pip install -q ipywidgets
 
 import ipywidgets as widgets
 print(widgets.Button.on_click.__doc__)
