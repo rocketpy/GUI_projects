@@ -157,6 +157,28 @@ widgets.IntProgress(
     orientation='horizontal'
 )
 
+# FloatProgress
+
+widgets.FloatProgress(
+    value=7.5,
+    min=0,
+    max=10.0,
+    description='Loading:',
+    bar_style='info',
+    style={'bar_color': '#ffff00'},
+    orientation='horizontal'
+)
+
+# BoundedIntText
+
+widgets.BoundedIntText(
+    value=7,
+    min=0,
+    max=10,
+    step=1,
+    description='Text:',
+    disabled=False
+)
 
 
 # Widget Events
