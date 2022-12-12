@@ -46,10 +46,7 @@ mylink = widgets.jslink((a, 'value'), (b, 'value'))
 
 
 # Unlinking widgets
-"""
-Unlinking the widgets is simple. All you have to do is call .unlink on the link object. 
-Try changing one of the widgets above after unlinking to see that they can be independently changed.
-"""
+
 # mylink.unlink()
 
 
