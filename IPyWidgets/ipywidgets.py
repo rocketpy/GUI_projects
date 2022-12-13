@@ -128,7 +128,6 @@ widgets.IntRangeSlider(
 )
 
 # FloatRangeSlider
-
 widgets.FloatRangeSlider(
     value=[5, 7.5],
     min=0,
@@ -143,7 +142,6 @@ widgets.FloatRangeSlider(
 )
 
 # IntProgress
-
 widgets.IntProgress(
     value=7,
     min=0,
@@ -155,7 +153,6 @@ widgets.IntProgress(
 )
 
 # FloatProgress
-
 widgets.FloatProgress(
     value=7.5,
     min=0,
@@ -167,7 +164,6 @@ widgets.FloatProgress(
 )
 
 # BoundedIntText
-
 widgets.BoundedIntText(
     value=7,
     min=0,
@@ -176,6 +172,26 @@ widgets.BoundedIntText(
     description='Text:',
     disabled=False
 )
+
+
+# BoundedFloatText
+widgets.BoundedFloatText(
+    value=7.5,
+    min=0,
+    max=10.0,
+    step=0.1,
+    description='Text:',
+    disabled=False
+)
+
+# IntText
+widgets.IntText(
+    value=7,
+    description='Any:',
+    disabled=False
+)
+
+
 
 
 # Widget Events
