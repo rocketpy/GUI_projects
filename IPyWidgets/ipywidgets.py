@@ -191,6 +191,23 @@ widgets.IntText(
     disabled=False
 )
 
+# FloatText
+widgets.FloatText(
+    value=7.5,
+    description='Any:',
+    disabled=False
+)
+
+# ToggleButton
+widgets.ToggleButton(
+    value=False,
+    description='Click me',
+    disabled=False,
+    button_style='', # 'success', 'info', 'warning', 'danger' or ''
+    tooltip='Description',
+    icon='check' # (FontAwesome names without the `fa-` prefix)
+)
+
 
 
 
