@@ -208,7 +208,20 @@ widgets.ToggleButton(
     icon='check' # (FontAwesome names without the `fa-` prefix)
 )
 
+# Checkbox
+widgets.Checkbox(
+    value=False,
+    description='Check me',
+    disabled=False,
+    indent=False
+)
 
+# Valid
+# The valid widget provides a read-only indicator. !!!
+widgets.Valid(
+    value=False,
+    description='Valid!',
+)
 
 
 # Widget Events
