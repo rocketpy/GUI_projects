@@ -224,6 +224,18 @@ widgets.Valid(
 )
 
 
+# Dropdown
+
+widgets.Dropdown(
+    options=['1', '2', '3'],
+    value='2',
+    description='Number:',
+    disabled=False,
+)
+
+
+
+
 # Widget Events
 
 # Special events
