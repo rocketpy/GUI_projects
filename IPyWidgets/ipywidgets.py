@@ -233,6 +233,22 @@ widgets.Dropdown(
     disabled=False,
 )
 
+# The following is also valid, displaying the words 'One', 'Two', 'Three' as the dropdown choices but returning the values 1, 2, 3.
+widgets.Dropdown(
+    options=[('One', 1), ('Two', 2), ('Three', 3)],
+    value=2,
+    description='Number:',
+)
+
+# RadioButtons
+widgets.RadioButtons(
+    options=['pepperoni', 'pineapple', 'anchovies'],
+#    value='pineapple', # Defaults to 'pineapple'
+#    layout={'width': 'max-content'}, # If the items' names are long
+    description='Pizza topping:',
+    disabled=False
+)
+
 
 
 
