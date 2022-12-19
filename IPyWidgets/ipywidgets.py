@@ -249,6 +249,24 @@ widgets.RadioButtons(
     disabled=False
 )
 
+# With dynamic layout and very long labels
+widgets.Box(
+    [
+        widgets.Label(value='Pizza topping with a very long label:'),
+        widgets.RadioButtons(
+            options=[
+                'pepperoni',
+                'pineapple',
+                'anchovies',
+                'and the long name that will fit fine and the long name that will fit fine and the long name that will fit fine '
+            ],
+            layout={'width': 'max-content'}
+        )
+    ]
+)
+
+
+
 
 
 
