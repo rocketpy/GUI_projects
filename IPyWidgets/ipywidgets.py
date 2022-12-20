@@ -266,6 +266,28 @@ widgets.Box(
 )
 
 
+# Select
+widgets.Select(
+    options=['Linux', 'Windows', 'macOS'],
+    value='macOS',
+    # rows=10,
+    description='OS:',
+    disabled=False
+)
+
+
+# SelectionSlider
+widgets.SelectionSlider(
+    options=['scrambled', 'sunny side up', 'poached', 'over easy'],
+    value='sunny side up',
+    description='I like my eggs ...',
+    disabled=False,
+    continuous_update=False,
+    orientation='horizontal',
+    readout=True
+)
+
+
 
 
 
