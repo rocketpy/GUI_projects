@@ -287,6 +287,18 @@ widgets.SelectionSlider(
     readout=True
 )
 
+# SelectionRangeSlider
+# The value, index, and label keys are 2-tuples of the min and max values selected. The options must be nonempty.
+import datetime
+dates = [datetime.date(2015, i, 1) for i in range(1, 13)]
+options = [(i.strftime('%b'), i) for i in dates]
+widgets.SelectionRangeSlider(
+    options=options,
+    index=(0, 11),
+    description='Months (2015)',
+    disabled=False
+)
+
 
 
 
