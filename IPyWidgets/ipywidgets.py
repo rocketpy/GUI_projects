@@ -309,8 +309,15 @@ widgets.ToggleButtons(
 #     icons=['check'] * 3
 )
 
-
-
+# SelectMultiple
+# Multiple values can be selected with shift and/or ctrl (or command) pressed and mouse clicks or arrow keys.
+widgets.SelectMultiple(
+    options=['Apples', 'Oranges', 'Pears'],
+    value=['Oranges'],
+    #rows=10,
+    description='Fruits',
+    disabled=False
+)
 
 
 
