@@ -299,6 +299,16 @@ widgets.SelectionRangeSlider(
     disabled=False
 )
 
+# ToggleButtons
+widgets.ToggleButtons(
+    options=['Slow', 'Regular', 'Fast'],
+    description='Speed:',
+    disabled=False,
+    button_style='', # 'success', 'info', 'warning', 'danger' or ''
+    tooltips=['Description of slow', 'Description of regular', 'Description of fast'],
+#     icons=['check'] * 3
+)
+
 
 
 
