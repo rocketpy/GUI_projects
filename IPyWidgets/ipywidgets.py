@@ -320,6 +320,26 @@ widgets.SelectMultiple(
 )
 
 
+# Text
+widgets.Text(
+    value='Hello World',
+    placeholder='Type something',
+    description='String:',
+    disabled=False
+)
+
+# Textarea
+widgets.Textarea(
+    value='Hello World',
+    placeholder='Type something',
+    description='String:',
+    disabled=False
+)
+
+
+
+
+
 
 # Widget Events
 
