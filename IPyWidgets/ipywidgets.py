@@ -337,6 +337,29 @@ widgets.Textarea(
 )
 
 
+# Combobox
+widgets.Combobox(
+    # value='John',
+    placeholder='Choose Someone',
+    options=['Paul', 'John', 'George', 'Ringo'],
+    description='Combobox:',
+    ensure_option=True,
+    disabled=False
+)
+
+
+# Password
+"""
+The Password widget hides user input on the screen. This widget is not a secure way to collect sensitive information because:
+The contents of the Password widget are transmitted unencrypted.
+If the widget state is saved in the notebook the contents of the Password widget is stored as plain text.
+"""
+widgets.Password(
+    value='password',
+    placeholder='Enter password',
+    description='Password:',
+    disabled=False
+)
 
 
 
