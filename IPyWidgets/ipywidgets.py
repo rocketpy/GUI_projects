@@ -361,6 +361,27 @@ widgets.Password(
     disabled=False
 )
 
+# Label
+
+widgets.HBox([widgets.Label(value="The $m$ in $E=mc^2$:"), widgets.FloatSlider()])
+
+# HTML
+widgets.HTML(
+    value="Hello <b>World</b>",
+    placeholder='Some HTML',
+    description='Some HTML',
+)
+
+# Image
+file = open("images/WidgetArch.png", "rb")
+image = file.read()
+widgets.Image(
+    value=image,
+    format='png',
+    width=300,
+    height=400,
+)
+
 
 
 
