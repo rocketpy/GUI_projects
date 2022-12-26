@@ -382,6 +382,33 @@ widgets.Image(
     height=400,
 )
 
+# Button
+button = widgets.Button(
+    description='Click me',
+    disabled=False,
+    button_style='', # 'success', 'info', 'warning', 'danger' or ''
+    tooltip='Click me',
+    icon='check' # (FontAwesome names without the `fa-` prefix)
+)
+# button
+
+
+# Play (Animation) widget
+# The Play widget is useful to perform animations by iterating on a sequence of integers with a certain speed.
+# The value of the slider below is linked to the player.
+play = widgets.Play(
+    value=50,
+    min=0,
+    max=100,
+    step=1,
+    interval=500,
+    description="Press play",
+    disabled=False
+)
+slider = widgets.IntSlider()
+widgets.jslink((play, 'value'), (slider, 'value'))
+widgets.HBox([play, slider])
+
 
 
 
