@@ -420,8 +420,13 @@ tags = widgets.TagsInput(
 # tags
 
 
-
-
+# ColorsInput
+color_tags = widgets.ColorsInput(
+    value=['red', '#2f6d30'],
+    # allowed_tags=['red', 'blue', 'green'],
+    # allow_duplicates=False
+)
+# color_tags
 
 
 # Widget Events
