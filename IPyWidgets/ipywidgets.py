@@ -410,6 +410,18 @@ widgets.jslink((play, 'value'), (slider, 'value'))
 widgets.HBox([play, slider])
 
 
+# Tag widgets
+# TagsInput
+tags = widgets.TagsInput(
+    value=['pizza', 'fries'],
+    allowed_tags=['pizza', 'fries', 'tomatoes', 'steak'],
+    allow_duplicates=False
+)
+# tags
+
+
+
+
 
 
 # Widget Events
