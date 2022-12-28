@@ -428,6 +428,22 @@ color_tags = widgets.ColorsInput(
 )
 # color_tags
 
+# Float and Integer Input widgets
+floatsinput = widgets.FloatsInput(
+    value=[1.3, 4.56, 78.90],
+    tag_style='info',
+    format = '.2f'
+)
+# floatsinput
+
+intsinput = widgets.IntsInput(
+    value=[1, 4, 3243],
+    min=0,
+    max=1000000,
+    format='$,d'
+)
+# intsinput
+
 
 # Widget Events
 
