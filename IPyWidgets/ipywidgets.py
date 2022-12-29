@@ -445,6 +445,21 @@ intsinput = widgets.IntsInput(
 # intsinput
 
 
+# Date picker
+widgets.DatePicker(
+    description='Pick a Date',
+    disabled=False
+)
+
+
+# Time picker
+widgets.TimePicker(
+    description='Pick a Time',
+    disabled=False
+)
+
+
+
 # Widget Events
 
 # Special events
