@@ -459,6 +459,15 @@ widgets.TimePicker(
 )
 
 
+# Time zones
+widgets.DatetimePicker(
+    description='Pick a Time',
+    disabled=False
+)
+
+# Naive picker
+widgets.NaiveDatetimePicker(description='Pick a Time')
+
 
 # Widget Events
 
