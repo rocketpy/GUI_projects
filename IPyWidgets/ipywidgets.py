@@ -469,6 +469,27 @@ widgets.DatetimePicker(
 widgets.NaiveDatetimePicker(description='Pick a Time')
 
 
+# Color picker
+widgets.ColorPicker(
+    concise=False,
+    description='Pick a color',
+    value='blue',
+    disabled=False
+)
+
+
+# File Upload
+# The FileUpload allows to upload any type of file(s) into memory in the kernel.
+
+widgets.FileUpload(
+    accept='',  # Accepted file extension e.g. '.txt', '.pdf', 'image/*', 'image/*,.pdf'
+    multiple=False  # True to accept multiple files upload else False
+)
+
+
+
+
+
 # Widget Events
 
 # Special events
