@@ -486,7 +486,19 @@ widgets.FileUpload(
     multiple=False  # True to accept multiple files upload else False
 )
 
+uploader = widgets.FileUpload()
+display(uploader)
 
+# upload something...
+
+# once a file is uploaded, use the `.value` attribute to retrieve the content:
+uploader.value
+
+uploaded_file = uploader.value[0]
+uploaded_file["size"]
+uploaded_file.size
+uploaded_file.content
+uploaded_file.content.tobytes()
 
 
 
