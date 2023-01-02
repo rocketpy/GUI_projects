@@ -501,6 +501,23 @@ uploaded_file.content
 uploaded_file.content.tobytes()
 
 
+# import codecs
+codecs.decode(uploaded_file.content, encoding="utf-8")
+
+
+# save the uploaded file to the filesystem from the kernel
+with open("./saved-output.txt", "wb") as fp:
+    fp.write(uploaded_file.content)
+
+
+# To convert the uploaded file into a Pandas dataframe
+import io
+import pandas as pd
+pd.read_csv(io.BytesIO(uploaded_file.content))
+
+# visualize it with an image widget
+widgets.Image(value=uploaded_file.content.tobytes())
+
 
 # Widget Events
 
